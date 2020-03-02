@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-style {
+  background-color: dodgerblue;
+  padding-right: 50px;
+  color: whitesmoke;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  .listing-style {
+    display: inline;
+    list-style-type: none;
+
+    li {
+      float: left;
+      margin: 15px 20px;
+      font-family: "Anton";
+      font-size: 1.2rem;
+      &:hover {
+        font-weight: bold;
+        border-bottom: 2px solid whitesmoke;
+        cursor: pointer;
+      }
+      @media screen and(max-width: 400px) {
+        font-size: 1rem;
+        margin: 5px 10px;
+      }
+    }
+  }
+  @media screen and(min-width: 768px) {
+    .listing-style {
+      float: right;
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// about me style
+.about {
+  margin: 100px auto 100px auto;
+  background-image: url("./pictures/bubble.jpg");
+  display: flex;
+  justify-content: space-around;
+  .text-about {
+    width: 60%;
+    padding-top: 20px;
+    font-family: "Cabin";
+    color: dodgerblue;
+    text-align: center;
+    .info {
+      article {
+        display: flex;
+        align-items: center;
+        img {
+          width: 10%;
+        }
+        span {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 5px;
+          font-size: 1rem;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .picture-about {
+    width: 30%;
+    margin: 50px auto;
+    img {
+      width: 50%;
+      border-radius: 50%;
+      border: 10px solid dodgerblue;
+    }
+  }
+  @media screen and(max-width: 768px) {
+    flex-wrap: wrap;
+    .text-about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 80%;
+    }
+    .picture-about {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    }
+  }
+}

@@ -1,32 +1,128 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-style {
+  background-color: dodgerblue;
+  padding-right: 50px;
+  color: whitesmoke;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.navbar-style .listing-style {
+  display: inline;
+  list-style-type: none;
+}
+
+.navbar-style .listing-style li {
+  float: left;
+  margin: 15px 20px;
+  font-family: "Anton";
+  font-size: 1.2rem;
+}
+
+.navbar-style .listing-style li:hover {
+  font-weight: bold;
+  border-bottom: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-style .listing-style li {
+    font-size: 1rem;
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-style .listing-style {
+    float: right;
+  }
+  .navbar-style .listing-style li {
+    font-size: 1.5rem;
+  }
+}
+
+.about {
+  margin: 100px auto 100px auto;
+  background-image: url("./pictures/bubble.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .text-about {
+  width: 60%;
+  padding-top: 20px;
+  font-family: "Cabin";
+  color: dodgerblue;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about .text-about .info article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.about .text-about .info article img {
+  width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about .text-about .info article span {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.about .picture-about {
+  width: 30%;
+  margin: 50px auto;
+}
+
+.about .picture-about img {
+  width: 50%;
+  border-radius: 50%;
+  border: 10px solid dodgerblue;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  .about .text-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .about .picture-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
   }
 }
+/*# sourceMappingURL=App.css.map */
