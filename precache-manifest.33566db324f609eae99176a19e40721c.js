@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "f3e3efe1601e124bcf9b",
-    "url": "/bojankrstic/static/css/main.434818b2.chunk.css"
+    "revision": "774e8abd6b320b029e99",
+    "url": "/bojankrstic/static/css/main.e05d1fb4.chunk.css"
   },
   {
-    "revision": "f3e3efe1601e124bcf9b",
-    "url": "/bojankrstic/static/js/main.f3e3efe1.chunk.js"
+    "revision": "774e8abd6b320b029e99",
+    "url": "/bojankrstic/static/js/main.774e8abd.chunk.js"
   },
   {
     "revision": "8c8a272fada27f01f7dc",
     "url": "/bojankrstic/static/js/runtime~main.8c8a272f.js"
   },
   {
-    "revision": "34f59e4a6bf740179b92",
-    "url": "/bojankrstic/static/js/2.34f59e4a.chunk.js"
+    "revision": "ee20d55ee49a15b13c41",
+    "url": "/bojankrstic/static/js/2.ee20d55e.chunk.js"
+  },
+  {
+    "revision": "fd87b89588150e8bf0351e4f8f0cc1c6",
+    "url": "/bojankrstic/static/media/responsive.fd87b895.svg"
   },
   {
     "revision": "b5b5f104b83c949dc75172dc8f75499c",
@@ -36,7 +40,7 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/bubble.ea91a528.jpg"
   },
   {
-    "revision": "44eb3d798c839c32f9dbb3a9d7f03937",
+    "revision": "086c8034cc7af5d5e1478f2ecef2311b",
     "url": "/bojankrstic/index.html"
   }
 ];
