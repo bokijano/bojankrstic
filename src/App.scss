@@ -4,55 +4,120 @@
   box-sizing: border-box;
 }
 .navbar-style {
+  display: flex;
+  align-items: center;
   background-color: dodgerblue;
   padding-right: 50px;
   color: whitesmoke;
   width: 100%;
   top: 0;
   position: fixed;
+  z-index: 1;
+  .logo {
+    padding: 5px 0 0 5px;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    img {
+      width: 15%;
+      color: white;
+    }
+  }
+  @keyframes logo {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 25px;
+    }
+    100% {
+      left: 0;
+    }
+  }
   .listing-style {
-    display: inline;
+    float: right;
     list-style-type: none;
-
     li {
       float: left;
       margin: 15px 20px;
       font-family: "Anton";
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       &:hover {
-        font-weight: bold;
-        border-bottom: 2px solid whitesmoke;
+        border-bottom: 3px solid whitesmoke;
         cursor: pointer;
-      }
-      @media screen and(max-width: 400px) {
-        font-size: 1rem;
-        margin: 5px 10px;
       }
     }
   }
-  @media screen and(min-width: 768px) {
-    .listing-style {
-      float: right;
-      li {
-        font-size: 1.5rem;
+  .nav-btn {
+    display: none;
+    float: right;
+    margin: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: whitesmoke;
+    font-size: 1.7rem;
+  }
+  @media screen and(max-width: 600px) {
+    .logo {
+      img {
+        width: 25%;
       }
+    }
+    .listing-style {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s linear;
+      li {
+        float: none;
+      }
+    }
+    .show-nav {
+      height: 100%;
+      width: 100%;
+    }
+    .nav-btn {
+      display: block;
     }
   }
 }
 
-// about me style
+// home page style
 .about {
-  margin: 100px auto 100px auto;
+  margin: 0 auto 0 auto;
+  padding: 150px 0 100px 0;
   background-image: url("./pictures/bubble.jpg");
+  border-bottom: 5px solid dodgerblue;
   display: flex;
   justify-content: space-around;
+  animation: 5s ease 0s normal forwards 1 about;
+  @keyframes about {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .text-about {
-    width: 60%;
+    width: 40%;
     padding-top: 20px;
     font-family: "Cabin";
     color: dodgerblue;
     text-align: center;
+    h1 {
+      font-size: 3rem !important;
+    }
+    h2 {
+      span {
+        font-size: 2rem !important;
+      }
+    }
     .info {
+      padding-top: 50px;
       article {
         display: flex;
         align-items: center;
@@ -74,11 +139,15 @@
     img {
       width: 50%;
       border-radius: 50%;
+      background: whitesmoke;
+      padding: 3px;
       border: 10px solid dodgerblue;
+      border-style: inset;
     }
   }
   @media screen and(max-width: 768px) {
     flex-wrap: wrap;
+    padding: 100px 0 100px 0;
     .text-about {
       display: flex;
       justify-content: center;
@@ -90,5 +159,18 @@
       justify-content: center;
       width: 80%;
     }
+  }
+}
+
+// about me part style
+.about-me {
+  margin-bottom: 10px;
+  p {
+    padding-top: 10px;
+    font-family: "Anton";
+    font-size: 2rem;
+    text-align: center;
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
   }
 }

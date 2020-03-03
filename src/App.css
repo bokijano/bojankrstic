@@ -6,16 +6,63 @@
 }
 
 .navbar-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: dodgerblue;
   padding-right: 50px;
   color: whitesmoke;
   width: 100%;
   top: 0;
   position: fixed;
+  z-index: 1;
+}
+
+.navbar-style .logo {
+  padding: 5px 0 0 5px;
+  position: relative;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.navbar-style .logo img {
+  width: 15%;
+  color: white;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .navbar-style .listing-style {
-  display: inline;
+  float: right;
   list-style-type: none;
 }
 
@@ -23,47 +70,99 @@
   float: left;
   margin: 15px 20px;
   font-family: "Anton";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .navbar-style .listing-style li:hover {
-  font-weight: bold;
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
-  .navbar-style .listing-style li {
-    font-size: 1rem;
-    margin: 5px 10px;
-  }
+.navbar-style .nav-btn {
+  display: none;
+  float: right;
+  margin: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: whitesmoke;
+  font-size: 1.7rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 600px) {
+  .navbar-style .logo img {
+    width: 25%;
+  }
   .navbar-style .listing-style {
-    float: right;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
   }
   .navbar-style .listing-style li {
-    font-size: 1.5rem;
+    float: none;
+  }
+  .navbar-style .show-nav {
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-style .nav-btn {
+    display: block;
   }
 }
 
 .about {
-  margin: 100px auto 100px auto;
+  margin: 0 auto 0 auto;
+  padding: 150px 0 100px 0;
   background-image: url("./pictures/bubble.jpg");
+  border-bottom: 5px solid dodgerblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-animation: 5s ease 0s normal forwards 1 about;
+          animation: 5s ease 0s normal forwards 1 about;
+}
+
+@-webkit-keyframes about {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes about {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .about .text-about {
-  width: 60%;
+  width: 40%;
   padding-top: 20px;
   font-family: "Cabin";
   color: dodgerblue;
   text-align: center;
+}
+
+.about .text-about h1 {
+  font-size: 3rem !important;
+}
+
+.about .text-about h2 span {
+  font-size: 2rem !important;
+}
+
+.about .text-about .info {
+  padding-top: 50px;
 }
 
 .about .text-about .info article {
@@ -94,13 +193,17 @@
 .about .picture-about img {
   width: 50%;
   border-radius: 50%;
+  background: whitesmoke;
+  padding: 3px;
   border: 10px solid dodgerblue;
+  border-style: inset;
 }
 
 @media screen and (max-width: 768px) {
   .about {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 100px 0 100px 0;
   }
   .about .text-about {
     display: -webkit-box;
@@ -124,5 +227,18 @@
             justify-content: center;
     width: 80%;
   }
+}
+
+.about-me {
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  padding-top: 10px;
+  font-family: "Anton";
+  font-size: 2rem;
+  text-align: center;
+  color: dodgerblue;
+  border-bottom: 2px solid dodgerblue;
 }
 /*# sourceMappingURL=App.css.map */
