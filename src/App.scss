@@ -164,13 +164,111 @@
 
 // about me part style
 .about-me {
+  background: rgba(30, 144, 255, 0.2);
   margin-bottom: 10px;
-  p {
-    padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px solid dodgerblue;
+  h1 {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 0;
     font-family: "Anton";
     font-size: 2rem;
     text-align: center;
     color: dodgerblue;
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 5px solid dodgerblue;
+    @media screen and (max-width: 400px) {
+      width: 50%;
+    }
+  }
+  .first-art {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 30%;
+      position: relative;
+      animation-name: developer;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    section {
+      width: 40%;
+      text-align: justify;
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2px 0;
+        font-size: 1.2rem;
+        color: rgb(75, 75, 75);
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+          padding-top: 10px;
+        }
+      }
+    }
+    @keyframes developer {
+      0% {
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+        left: 10px;
+        top: 0px;
+      }
+      50% {
+        left: 10px;
+        top: 10px;
+      }
+      75% {
+        left: 0px;
+        top: 10px;
+      }
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      img {
+        width: 60%;
+      }
+      section {
+        margin-top: 20px;
+        width: 90%;
+      }
+    }
+  }
+  .sec-article {
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 25px;
+      font-size: 1.2rem;
+      color: rgb(75, 75, 75);
+    }
+    section {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      img {
+        width: 7vw;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-wrap: wrap;
+        img {
+          width: 17vw;
+          padding: 3vw;
+        }
+      }
+    }
   }
 }

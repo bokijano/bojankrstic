@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FaAlignRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 
 import Responsive from "./../pictures/responsive.svg";
 
