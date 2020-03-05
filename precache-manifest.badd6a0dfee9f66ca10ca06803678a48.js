@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "bd93f712c03a931e8568",
-    "url": "/bojankrstic/static/css/main.c242c063.chunk.css"
+    "revision": "32e16c8b0d0a6302c41b",
+    "url": "/bojankrstic/static/css/main.ee61256b.chunk.css"
   },
   {
-    "revision": "bd93f712c03a931e8568",
-    "url": "/bojankrstic/static/js/main.bd93f712.chunk.js"
+    "revision": "32e16c8b0d0a6302c41b",
+    "url": "/bojankrstic/static/js/main.32e16c8b.chunk.js"
   },
   {
     "revision": "8c8a272fada27f01f7dc",
     "url": "/bojankrstic/static/js/runtime~main.8c8a272f.js"
   },
   {
-    "revision": "cd42ffc35bd4371d8979",
-    "url": "/bojankrstic/static/js/2.cd42ffc3.chunk.js"
-  },
-  {
-    "revision": "fd87b89588150e8bf0351e4f8f0cc1c6",
-    "url": "/bojankrstic/static/media/responsive.fd87b895.svg"
+    "revision": "fdb3a1ea6371aebcb87d",
+    "url": "/bojankrstic/static/js/2.fdb3a1ea.chunk.js"
   },
   {
     "revision": "b5b5f104b83c949dc75172dc8f75499c",
@@ -100,11 +96,15 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/worldcup.b4b23372.jpg"
   },
   {
+    "revision": "fd87b89588150e8bf0351e4f8f0cc1c6",
+    "url": "/bojankrstic/static/media/responsive.fd87b895.svg"
+  },
+  {
     "revision": "ea91a52834df68ac5e243e173bae0952",
     "url": "/bojankrstic/static/media/bubble.ea91a528.jpg"
   },
   {
-    "revision": "8f41f47ec1caa99e23bea612b5de33f8",
+    "revision": "bd89ea50ac249a695222a4afc73f8fc7",
     "url": "/bojankrstic/index.html"
   }
 ];
