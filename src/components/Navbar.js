@@ -29,7 +29,6 @@ export default class Navbar extends Component {
         >
           <li>Home</li>
           <li>About Me</li>
-          <li>Skills</li>
           <li>Projects</li>
         </ul>
       </div>

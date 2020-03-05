@@ -5,9 +5,10 @@
 }
 .navbar-style {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   background-color: dodgerblue;
-  padding-right: 50px;
+  //padding-right: 50px;
   color: whitesmoke;
   width: 100%;
   top: 0;
@@ -36,7 +37,9 @@
     }
   }
   .listing-style {
-    float: right;
+    //float: right;
+    width: 60%;
+    display: flex;
     list-style-type: none;
     li {
       float: left;
@@ -53,6 +56,7 @@
     display: none;
     float: right;
     margin: 10px;
+    width: 20%;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -60,13 +64,14 @@
     color: whitesmoke;
     font-size: 1.7rem;
   }
-  @media screen and(max-width: 600px) {
+  @media screen and(max-width: 768px) {
     .logo {
       img {
         width: 25%;
       }
     }
     .listing-style {
+      flex-direction: column;
       width: 0;
       height: 0;
       overflow: hidden;
@@ -93,13 +98,14 @@
   border-bottom: 5px solid dodgerblue;
   display: flex;
   justify-content: space-around;
-  animation: 5s ease 0s normal forwards 1 about;
+  animation: 2s linear 0s normal forwards 1 about;
+
   @keyframes about {
     from {
-      opacity: 0.2;
+      transform: translateX(-100%);
     }
     to {
-      opacity: 1;
+      transform: translateX(0);
     }
   }
   .text-about {
@@ -260,6 +266,34 @@
       padding-bottom: 10px;
       img {
         width: 7vw;
+        position: relative;
+        animation-name: load-img;
+        animation-duration: 2s;
+      }
+      &:hover {
+        img {
+          position: relative;
+          animation-name: spin-img;
+          animation-duration: 1s;
+        }
+      }
+      @keyframes spin-img {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes load-img {
+        from {
+          transform: translateY(50%);
+          opacity: 0.1;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
       @media screen and (max-width: 768px) {
         width: 100%;
@@ -267,6 +301,97 @@
         img {
           width: 17vw;
           padding: 3vw;
+        }
+      }
+    }
+  }
+}
+
+//projects style
+.projects {
+  background-color: rgba(30, 144, 255, 0.4);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px solid dodgerblue;
+  position: relative;
+  animation-name: load-img;
+  animation-duration: 4s;
+  @keyframes load-img {
+    from {
+      transform: translateY(50%);
+      opacity: 0.1;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  h1 {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: "Anton";
+    font-size: 2rem;
+    text-align: center;
+    color: dodgerblue;
+    border-bottom: 5px solid dodgerblue;
+    @media screen and (max-width: 400px) {
+      width: 50%;
+    }
+  }
+  .project-link {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    .project-image {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 30%;
+      margin-top: 10px;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+      img {
+        opacity: 1;
+        display: block;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+      .project-name {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bolder;
+          font-size: 1.5rem;
+          font-family: "Anton";
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      &:hover {
+        img {
+          opacity: 0.5;
+          border: 2px solid dodgerblue;
+        }
+        .project-name {
+          opacity: 1;
         }
       }
     }
