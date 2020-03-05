@@ -7,22 +7,27 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: dodgerblue;
-  //padding-right: 50px;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  border-bottom: 2px solid rgb(5, 79, 153);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(5, 79, 153);
   width: 100%;
   top: 0;
   position: fixed;
   z-index: 1;
   .logo {
-    padding: 5px 0 0 5px;
+    padding-left: 10px;
     position: relative;
     animation-name: logo;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     img {
-      width: 15%;
+      width: 12%;
       color: white;
+      @media screen and (max-width: 768px) {
+        width: 10%;
+      }
     }
   }
   @keyframes logo {
@@ -37,31 +42,36 @@
     }
   }
   .listing-style {
-    //float: right;
     width: 60%;
     display: flex;
     list-style-type: none;
+    transition: 0.5s;
     li {
       float: left;
       margin: 15px 20px;
       font-family: "Anton";
       font-size: 1.5rem;
-      &:hover {
-        border-bottom: 3px solid whitesmoke;
-        cursor: pointer;
+      a {
+        text-decoration: none;
+        color: rgb(5, 79, 153);
+        &:hover {
+          border-bottom: 3px solid rgb(5, 79, 153);
+          cursor: pointer;
+          transition: 0.5s;
+        }
       }
     }
   }
   .nav-btn {
     display: none;
     float: right;
-    margin: 10px;
+    margin: 5px;
     width: 20%;
     background: transparent;
     border: none;
     cursor: pointer;
     outline: none;
-    color: whitesmoke;
+    color: rgb(5, 79, 153);
     font-size: 1.7rem;
   }
   @media screen and(max-width: 768px) {
@@ -78,6 +88,7 @@
       transition: all 1s linear;
       li {
         float: none;
+        font-size: 1.2rem;
       }
     }
     .show-nav {
@@ -95,7 +106,7 @@
   margin: 0 auto 0 auto;
   padding: 150px 0 100px 0;
   background-image: url("./pictures/bubble.jpg");
-  border-bottom: 5px solid dodgerblue;
+  border-bottom: 5px solid rgb(5, 79, 153);
   display: flex;
   justify-content: space-around;
   animation: 2s linear 0s normal forwards 1 about;
@@ -112,7 +123,7 @@
     width: 40%;
     padding-top: 20px;
     font-family: "Cabin";
-    color: dodgerblue;
+    color: rgb(5, 79, 153);
     text-align: center;
     h1 {
       font-size: 3rem !important;
@@ -147,7 +158,7 @@
       border-radius: 50%;
       background: whitesmoke;
       padding: 3px;
-      border: 10px solid dodgerblue;
+      border: 10px solid rgb(5, 79, 153);
       border-style: inset;
     }
   }
@@ -171,10 +182,10 @@
 // about me part style
 .about-me {
   background: rgba(30, 144, 255, 0.2);
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  border-bottom: 5px solid dodgerblue;
+  padding: 85px 0 50px 0;
+  border-bottom: 5px solid rgb(5, 79, 153);
   h1 {
     width: 30%;
     margin: 0 auto;
@@ -183,7 +194,7 @@
     font-size: 2rem;
     text-align: center;
     color: dodgerblue;
-    border-bottom: 5px solid dodgerblue;
+    border-bottom: 5px solid rgb(5, 79, 153);
     @media screen and (max-width: 400px) {
       width: 50%;
     }
@@ -310,23 +321,11 @@
 //projects style
 .projects {
   background-color: rgba(30, 144, 255, 0.4);
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  border-bottom: 5px solid dodgerblue;
+  padding-top: 85px;
+  border-bottom: 5px solid rgb(5, 79, 153);
   position: relative;
-  animation-name: load-img;
-  animation-duration: 4s;
-  @keyframes load-img {
-    from {
-      transform: translateY(50%);
-      opacity: 0.1;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
   h1 {
     width: 30%;
     margin: 0 auto;
@@ -334,8 +333,8 @@
     font-family: "Anton";
     font-size: 2rem;
     text-align: center;
-    color: dodgerblue;
-    border-bottom: 5px solid dodgerblue;
+    color: rgb(5, 79, 153);
+    border-bottom: 5px solid rgb(5, 79, 153);
     @media screen and (max-width: 400px) {
       width: 50%;
     }
@@ -347,6 +346,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px 0;
+    animation-name: load-img;
+    animation-duration: 4s;
+    @keyframes load-img {
+      from {
+        transform: translateY(50%);
+        opacity: 0.1;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
     .project-image {
       display: flex;
       justify-content: center;
@@ -388,7 +399,7 @@
       &:hover {
         img {
           opacity: 0.5;
-          border: 2px solid dodgerblue;
+          border: 2px solid rgb(5, 79, 153);
         }
         .project-name {
           opacity: 1;

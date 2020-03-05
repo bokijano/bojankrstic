@@ -14,8 +14,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: dodgerblue;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  border-bottom: 2px solid #054f99;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #054f99;
   width: 100%;
   top: 0;
   position: fixed;
@@ -23,7 +26,7 @@
 }
 
 .navbar-style .logo {
-  padding: 5px 0 0 5px;
+  padding-left: 10px;
   position: relative;
   -webkit-animation-name: logo;
           animation-name: logo;
@@ -34,8 +37,14 @@
 }
 
 .navbar-style .logo img {
-  width: 15%;
+  width: 12%;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-style .logo img {
+    width: 10%;
+  }
 }
 
 @-webkit-keyframes logo {
@@ -68,6 +77,8 @@
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar-style .listing-style li {
@@ -77,21 +88,28 @@
   font-size: 1.5rem;
 }
 
-.navbar-style .listing-style li:hover {
-  border-bottom: 3px solid whitesmoke;
+.navbar-style .listing-style li a {
+  text-decoration: none;
+  color: #054f99;
+}
+
+.navbar-style .listing-style li a:hover {
+  border-bottom: 3px solid #054f99;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar-style .nav-btn {
   display: none;
   float: right;
-  margin: 10px;
+  margin: 5px;
   width: 20%;
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
-  color: whitesmoke;
+  color: #054f99;
   font-size: 1.7rem;
 }
 
@@ -112,6 +130,7 @@
   }
   .navbar-style .listing-style li {
     float: none;
+    font-size: 1.2rem;
   }
   .navbar-style .show-nav {
     height: 100%;
@@ -126,7 +145,7 @@
   margin: 0 auto 0 auto;
   padding: 150px 0 100px 0;
   background-image: url("./pictures/bubble.jpg");
-  border-bottom: 5px solid dodgerblue;
+  border-bottom: 5px solid #054f99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +181,7 @@
   width: 40%;
   padding-top: 20px;
   font-family: "Cabin";
-  color: dodgerblue;
+  color: #054f99;
   text-align: center;
 }
 
@@ -208,7 +227,7 @@
   border-radius: 50%;
   background: whitesmoke;
   padding: 3px;
-  border: 10px solid dodgerblue;
+  border: 10px solid #054f99;
   border-style: inset;
 }
 
@@ -244,7 +263,6 @@
 
 .about-me {
   background: rgba(30, 144, 255, 0.2);
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,7 +270,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 5px solid dodgerblue;
+  padding: 85px 0 50px 0;
+  border-bottom: 5px solid #054f99;
 }
 
 .about-me h1 {
@@ -263,7 +282,7 @@
   font-size: 2rem;
   text-align: center;
   color: dodgerblue;
-  border-bottom: 5px solid dodgerblue;
+  border-bottom: 5px solid #054f99;
 }
 
 @media screen and (max-width: 400px) {
@@ -485,7 +504,6 @@
 
 .projects {
   background-color: rgba(30, 144, 255, 0.4);
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,25 +511,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 5px solid dodgerblue;
+  padding-top: 85px;
+  border-bottom: 5px solid #054f99;
   position: relative;
-  -webkit-animation-name: load-img;
-          animation-name: load-img;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@keyframes load-img {
-  from {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0.1;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .projects h1 {
@@ -521,8 +523,8 @@
   font-family: "Anton";
   font-size: 2rem;
   text-align: center;
-  color: dodgerblue;
-  border-bottom: 5px solid dodgerblue;
+  color: #054f99;
+  border-bottom: 5px solid #054f99;
 }
 
 @media screen and (max-width: 400px) {
@@ -542,6 +544,23 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px 0;
+  -webkit-animation-name: load-img;
+          animation-name: load-img;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@keyframes load-img {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0.1;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .projects .project-link .project-image {
@@ -603,7 +622,7 @@
 
 .projects .project-link .project-image:hover img {
   opacity: 0.5;
-  border: 2px solid dodgerblue;
+  border: 2px solid #054f99;
 }
 
 .projects .project-link .project-image:hover .project-name {
