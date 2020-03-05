@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "828955de8f4446d000d2",
-    "url": "/bojankrstic/static/css/main.c1abc224.chunk.css"
+    "revision": "bd93f712c03a931e8568",
+    "url": "/bojankrstic/static/css/main.c242c063.chunk.css"
   },
   {
-    "revision": "828955de8f4446d000d2",
-    "url": "/bojankrstic/static/js/main.828955de.chunk.js"
+    "revision": "bd93f712c03a931e8568",
+    "url": "/bojankrstic/static/js/main.bd93f712.chunk.js"
   },
   {
     "revision": "8c8a272fada27f01f7dc",
     "url": "/bojankrstic/static/js/runtime~main.8c8a272f.js"
   },
   {
-    "revision": "1cc0bdbd5f5e32d9b0b7",
-    "url": "/bojankrstic/static/js/2.1cc0bdbd.chunk.js"
+    "revision": "cd42ffc35bd4371d8979",
+    "url": "/bojankrstic/static/js/2.cd42ffc3.chunk.js"
   },
   {
     "revision": "fd87b89588150e8bf0351e4f8f0cc1c6",
@@ -72,11 +72,39 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/react-logo.d14e4fd3.png"
   },
   {
+    "revision": "fe02578997ad5b5cb8939d0c167b4941",
+    "url": "/bojankrstic/static/media/yamb.fe025789.jpg"
+  },
+  {
+    "revision": "fab14cbe117963c8b5f17f8e1f90837d",
+    "url": "/bojankrstic/static/media/resorts.fab14cbe.jpg"
+  },
+  {
+    "revision": "48c7cdf28a3440343d5693122583a219",
+    "url": "/bojankrstic/static/media/forecast-serbia.48c7cdf2.jpg"
+  },
+  {
+    "revision": "940e25afd3c1f11ec43cebcd469f4f9b",
+    "url": "/bojankrstic/static/media/online-commerce.940e25af.jpg"
+  },
+  {
+    "revision": "f04787000f9e5a402fe108dc258600bc",
+    "url": "/bojankrstic/static/media/application-manager.f0478700.jpg"
+  },
+  {
+    "revision": "f907fafaada2cbf8cfafd7f37d5fa54c",
+    "url": "/bojankrstic/static/media/automobilizam.f907fafa.jpg"
+  },
+  {
+    "revision": "b4b23372f317a1b1bb6ef60fb60365c0",
+    "url": "/bojankrstic/static/media/worldcup.b4b23372.jpg"
+  },
+  {
     "revision": "ea91a52834df68ac5e243e173bae0952",
     "url": "/bojankrstic/static/media/bubble.ea91a528.jpg"
   },
   {
-    "revision": "69ea47ba9c19c0dd8b6aa3933a22ba76",
+    "revision": "8f41f47ec1caa99e23bea612b5de33f8",
     "url": "/bojankrstic/index.html"
   }
 ];
