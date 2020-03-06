@@ -13,7 +13,7 @@ class App extends Component {
   };
   handleToggle = () => {
     this.setState({
-      isOpen: true
+      isOpen: !this.state.isOpen
     });
   };
   toggleBack = () => {

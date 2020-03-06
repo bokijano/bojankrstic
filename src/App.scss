@@ -106,7 +106,7 @@
   margin: 0 auto 0 auto;
   padding: 150px 0 100px 0;
   background-image: url("./pictures/bubble.jpg");
-  border-bottom: 5px solid rgb(5, 79, 153);
+  border-bottom: 5px solid rgb(67, 98, 129);
   display: flex;
   justify-content: space-around;
   animation: 2s linear 0s normal forwards 1 about;
@@ -158,7 +158,7 @@
       border-radius: 50%;
       background: whitesmoke;
       padding: 3px;
-      border: 10px solid rgb(5, 79, 153);
+      border: 10px solid dodgerblue;
       border-style: inset;
     }
   }
@@ -193,7 +193,7 @@
     font-family: "Anton";
     font-size: 2rem;
     text-align: center;
-    color: dodgerblue;
+    color: rgb(5, 79, 153);
     border-bottom: 5px solid rgb(5, 79, 153);
     @media screen and (max-width: 400px) {
       width: 50%;
@@ -217,7 +217,7 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 2px 0;
         font-size: 1.2rem;
-        color: rgb(75, 75, 75);
+        color: rgb(5, 79, 153);
         @media screen and (max-width: 768px) {
           font-size: 1rem;
           padding-top: 10px;
@@ -265,7 +265,7 @@
       font-family: Arial, Helvetica, sans-serif;
       margin-top: 25px;
       font-size: 1.2rem;
-      color: rgb(75, 75, 75);
+      color: rgb(5, 79, 152);
     }
     section {
       width: 80%;
@@ -375,6 +375,8 @@
         border-radius: 10px;
         transition: 0.5s ease;
         backface-visibility: hidden;
+        border: 3px solid dodgerblue;
+        border-style: inset;
       }
       .project-name {
         transition: 0.5s ease;
@@ -387,7 +389,7 @@
         cursor: pointer;
         a {
           text-decoration: none;
-          color: #333;
+          color: rgb(5, 79, 153);
           font-weight: bolder;
           font-size: 1.5rem;
           font-family: "Anton";
@@ -398,8 +400,9 @@
       }
       &:hover {
         img {
-          opacity: 0.5;
-          border: 2px solid rgb(5, 79, 153);
+          opacity: 0.4;
+          border: 5px solid dodgerblue;
+          border-style: inset;
         }
         .project-name {
           opacity: 1;
