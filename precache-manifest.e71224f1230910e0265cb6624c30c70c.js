@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "32e16c8b0d0a6302c41b",
-    "url": "/bojankrstic/static/css/main.ee61256b.chunk.css"
+    "revision": "eec4d7a6e24929410875",
+    "url": "/bojankrstic/static/css/main.f8095267.chunk.css"
   },
   {
-    "revision": "32e16c8b0d0a6302c41b",
-    "url": "/bojankrstic/static/js/main.32e16c8b.chunk.js"
+    "revision": "eec4d7a6e24929410875",
+    "url": "/bojankrstic/static/js/main.eec4d7a6.chunk.js"
   },
   {
     "revision": "8c8a272fada27f01f7dc",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/bubble.ea91a528.jpg"
   },
   {
-    "revision": "bd89ea50ac249a695222a4afc73f8fc7",
+    "revision": "c88b55a1f4063aeaf343940791a36133",
     "url": "/bojankrstic/index.html"
   }
 ];
