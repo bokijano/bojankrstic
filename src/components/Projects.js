@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 import projects from "./ProjectData";
 
+import FunFactory from "./../pictures/projects/fun-factory.jpg";
 import MoviesApp from "./../pictures/projects/movie-app.jpg";
 import Yamb from "./../pictures/projects/yamb.jpg";
 import Resorts from "./../pictures/projects/resorts.jpg";
@@ -22,16 +23,17 @@ export default class Projects extends Component {
       Forecast,
       Resorts,
       Yamb,
-      MoviesApp
+      MoviesApp,
+      FunFactory,
     ],
-    projects: projects
+    projects: projects,
   };
   render() {
     return (
       <div className="projects">
         <h1>Projects</h1>
         <article className="project-link">
-          {this.state.projects.reverse().map(project => {
+          {this.state.projects.reverse().map((project) => {
             return (
               <section key={project.id} className="project-image">
                 <img
