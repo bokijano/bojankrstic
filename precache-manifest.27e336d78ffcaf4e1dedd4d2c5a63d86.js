@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "1358ea6622f7e28c769c",
-    "url": "/bojankrstic/static/css/main.54557393.chunk.css"
+    "revision": "964f2f4c015f76d56858",
+    "url": "/bojankrstic/static/css/main.00bf1fd9.chunk.css"
   },
   {
-    "revision": "1358ea6622f7e28c769c",
-    "url": "/bojankrstic/static/js/main.1358ea66.chunk.js"
+    "revision": "964f2f4c015f76d56858",
+    "url": "/bojankrstic/static/js/main.964f2f4c.chunk.js"
   },
   {
     "revision": "8c8a272fada27f01f7dc",
     "url": "/bojankrstic/static/js/runtime~main.8c8a272f.js"
   },
   {
-    "revision": "c2ea1f2f537ac821a383",
-    "url": "/bojankrstic/static/js/2.c2ea1f2f.chunk.js"
+    "revision": "4533a4501e309d53a304",
+    "url": "/bojankrstic/static/js/2.4533a450.chunk.js"
   },
   {
     "revision": "b5b5f104b83c949dc75172dc8f75499c",
@@ -68,6 +68,10 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/react-logo.d14e4fd3.png"
   },
   {
+    "revision": "787a3b9b61a44fbe037bdb54940e2f55",
+    "url": "/bojankrstic/static/media/games.787a3b9b.jpg"
+  },
+  {
     "revision": "fac4cc4d6b6452da4f9b0ded1a518d81",
     "url": "/bojankrstic/static/media/fun-factory.fac4cc4d.jpg"
   },
@@ -112,7 +116,7 @@ self.__precacheManifest = [
     "url": "/bojankrstic/static/media/bubble.ea91a528.jpg"
   },
   {
-    "revision": "662dcd7bcd75d7418080f16097754360",
+    "revision": "6455f68d88072435b1442e4d164cdd85",
     "url": "/bojankrstic/index.html"
   }
 ];
