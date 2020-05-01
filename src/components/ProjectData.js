@@ -55,6 +55,12 @@ const projectList = [
     linkSrc: "https://bokijano.github.io/funfactory",
     atlText: "funfactory appSrc",
   },
+  {
+    id: 10,
+    title: "CANVAS & GAMES",
+    linkSrc: "https://bokijano.github.io/games-with-animations",
+    atlText: "canvas games",
+  },
 ];
 
 export default projectList;

@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 
 import projects from "./ProjectData";
 
+import CanvasGames from "./../pictures/projects/games.jpg";
 import FunFactory from "./../pictures/projects/fun-factory.jpg";
 import MoviesApp from "./../pictures/projects/movie-app.jpg";
 import Yamb from "./../pictures/projects/yamb.jpg";
@@ -25,6 +26,7 @@ export default class Projects extends Component {
       Yamb,
       MoviesApp,
       FunFactory,
+      CanvasGames,
     ],
     projects: projects,
   };
