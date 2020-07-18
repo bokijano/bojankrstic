@@ -358,54 +358,78 @@
         opacity: 1;
       }
     }
-    .project-image {
+    .project-data {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       position: relative;
       width: 30%;
       margin-top: 10px;
       @media screen and (max-width: 768px) {
         width: 50%;
       }
-      img {
-        opacity: 1;
-        display: block;
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        transition: 0.5s ease;
-        backface-visibility: hidden;
-        border: 3px solid dodgerblue;
-        border-style: inset;
-      }
-      .project-name {
-        transition: 0.5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        cursor: pointer;
-        a {
-          text-decoration: none;
-          color: rgb(5, 79, 153);
-          font-weight: bolder;
-          font-size: 1.5rem;
-          font-family: "Anton";
-          @media screen and (max-width: 768px) {
-            font-size: 1rem;
-          }
-        }
-      }
-      &:hover {
+      .project-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img {
-          opacity: 0.4;
-          border: 5px solid dodgerblue;
+          opacity: 1;
+          display: block;
+          width: 80%;
+          height: auto;
+          border-radius: 10px;
+          transition: 0.5s ease;
+          backface-visibility: hidden;
+          border: 3px solid dodgerblue;
           border-style: inset;
         }
         .project-name {
-          opacity: 1;
+          transition: 0.5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          cursor: pointer;
+          a {
+            text-decoration: none;
+            color: rgb(5, 79, 153);
+            font-weight: bolder;
+            font-size: 1.5rem;
+            font-family: "Anton";
+            @media screen and (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+        }
+        &:hover {
+          img {
+            opacity: 0.4;
+            border: 5px solid dodgerblue;
+            border-style: inset;
+          }
+          .project-name {
+            opacity: 1;
+          }
+        }
+      }
+      .codes-link {
+        width: 50%;
+        text-align: center;
+        font-family: "Anton";
+        color: dodgerblue;
+        text-decoration: none;
+        margin: 5px 0 10px 0;
+        padding: 5px;
+        border: 2px solid rgb(5, 79, 153);
+        border-radius: 5px;
+        border-style: inset;
+        &:hover {
+          border: 5px solid dodgerblue;
+          border-style: inset;
         }
       }
     }

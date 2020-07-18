@@ -37,20 +37,29 @@ export default class Projects extends Component {
         <article className="project-link">
           {this.state.projects.reverse().map((project) => {
             return (
-              <section key={project.id} className="project-image">
-                <img
-                  src={this.state.projectImg[project.id - 1]}
-                  alt={project.altText}
-                />
-                <div className="project-name">
-                  <a href={project.linkSrc} target="_blank">
-                    <span>
-                      <FaSearch />
-                    </span>
-                    <br />
-                    {project.title}
-                  </a>
+              <section key={project.id} className="project-data">
+                <div className="project-image">
+                  <img
+                    src={this.state.projectImg[project.id - 1]}
+                    alt={project.altText}
+                  />
+                  <div className="project-name">
+                    <a href={project.linkSrc} target="_blank">
+                      <span>
+                        <FaSearch />
+                      </span>
+                      <br />
+                      {project.title}
+                    </a>
+                  </div>
                 </div>
+                <a
+                  className="codes-link"
+                  href={project.codeSrc}
+                  target="_blank"
+                >
+                  CODES
+                </a>
               </section>
             );
           })}
